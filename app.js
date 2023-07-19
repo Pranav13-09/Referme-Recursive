@@ -2,8 +2,8 @@ const express = require("express");
 const app = express();
 const User = require("./Models/userModal");
 const sgMail = require("@sendgrid/mail");
-const dotenv = require("dotenv");
-dotenv.config();
+// const dotenv = require("dotenv");
+// dotenv.config();
 
 sgMail.setApiKey(process.env.SG_MAIL_API_KEY);
 
